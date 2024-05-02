@@ -1,0 +1,68 @@
+#main-container {
+    justify-content: center;
+    background-color: aqua;
+    height: 450px;
+    width: 450px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#container {
+    height: 150px;
+    width: 250px;
+    background-color: rgb(216, 237, 255);
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#red{
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    cursor: pointer;
+}
+#red:hover{
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    cursor: pointer;
+    border: 1px solid black;
+}
+#blue{
+    height: 40px;
+    width: 40px;
+    background-color: blue;
+    cursor: pointer;
+}
+#blue:hover{
+    height: 40px;
+    width: 40px;
+    background-color: blue;
+    cursor: pointer;
+    border: 1px solid black;
+
+}
+#yellow{
+    height: 40px;
+    width: 40px;
+    background-color: yellow;
+    cursor: pointer;
+}
+#yellow:hover{
+    height: 40px;
+    width: 40px;
+    background-color: yellow;
+    cursor: pointer;
+    border: 1px solid black;
+
+}
