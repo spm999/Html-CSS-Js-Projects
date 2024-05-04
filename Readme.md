@@ -8,6 +8,6 @@ Create a few coloured boxes, and when the user clicks on any box, change the col
 
 Create a counter with start and stop button. When click on start, it should start from previous value on which it was stopped instead of zero.
 
-## 3. Generate Random Colour when click on start:
+## 3. Generate Random Colour when click on start: [https://randomcolourgen.netlify.app/]()
 
 Change the colour of background randomly, when clicked on start, and stop changing colour, if click on stopped.
