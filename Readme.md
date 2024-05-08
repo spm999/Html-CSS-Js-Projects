@@ -11,3 +11,7 @@ Create a counter with start and stop button. When click on start, it should star
 ## 3. Generate Random Colour when click on start: [https://randomcolourgen.netlify.app/]()
 
 Change the colour of background randomly, when clicked on start, and stop changing colour, if click on stopped.
+
+## 4. Show translated text, when click on specific div: [https://showtxt.netlify.app/]()
+
+Initially don't show any text, but when I click on language name, show the text in that language.
