@@ -15,3 +15,7 @@ Change the colour of background randomly, when clicked on start, and stop changi
 ## 4. Show translated text, when click on specific div: [https://showtxt.netlify.app/]()
 
 Initially don't show any text, but when I click on language name, show the text in that language.
+
+## 5. Disappear Message after given time: 
+
+Disappear message after given time and also show a counter
