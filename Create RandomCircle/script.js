@@ -1,5 +1,5 @@
 const circleCo = [];
-
+let message=''
 document.addEventListener('click', function (event) {
     // Create a new circle element
     const circleDiv = document.createElement('div');
@@ -51,17 +51,24 @@ document.addEventListener('click', function (event) {
 
         // Check if the circles intersect or if one is inside the other
         if (distance <= Math.abs(r1 - r2)) {
+            message="One circle is completely inside another.";
             console.log("One circle is completely inside another.");
         } else if (distance <= r1 + r2) {
+            message="Circles intersect!";
             console.log("Circles intersect!");
         } else {
+            message="Circles do not intersect.";
             console.log("Circles do not intersect.");
         }
 
         // Clear the circleCo array for the next set of circles
         circleCo.length = 0;
+        
+        setTimeout(function() {
+            alert(message);
+        }, 300); 
     }
-
     // Append the circle to the document body
     document.body.appendChild(circleDiv);
 });
+
