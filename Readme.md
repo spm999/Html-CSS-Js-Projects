@@ -23,3 +23,7 @@ Disappear message after given time and also show a counter
 ## 6. Multipage form: [https://multipageform1.netlify.app/]()
 
 Create a multipage form
+
+## 7. Create random size circle:
+
+Create random size circle on click. If their are two circles, remove them. Also check if they are intersecting. Also find intersection points
