@@ -10,8 +10,6 @@ document.addEventListener('click', function (event) {
         // If there are two circles, remove them
         console.log("Removing existing circles");
         document.querySelectorAll('.circle').forEach(circle => circle.remove());
-        circleCo.length = 0; // Reset circle data array
-
     }
 
     // Calculate a random radius for the circle
@@ -20,17 +18,17 @@ document.addEventListener('click', function (event) {
     const radius = minRadius + Math.random() * (maxRadius - minRadius);
 
     // Calculate the position of the circle relative to the click event coordinates
-    const x = event.clientX - radius / 2; // Adjust for the circle's radius
-    const y = event.clientY - radius / 2; // Adjust for the circle's radius
+    const x = event.clientX  ; // Adjust for the circle's radius
+    const y = event.clientY  ; // Adjust for the circle's radius
 
     // Store the circle's coordinates and radius in the circleCo array
     circleCo.push({ x, y, radius });
 
     // Set the position and size of the circle
-    circleDiv.style.left = `${x}px`;
-    circleDiv.style.top = `${y}px`;
-    circleDiv.style.height = `${radius}px`;
-    circleDiv.style.width = `${radius}px`;
+    circleDiv.style.left = `${x-radius}px`;
+    circleDiv.style.top = `${y-radius}px`;
+    circleDiv.style.height = `${radius*2}px`;
+    circleDiv.style.width = `${radius*2}px`;
 
     // Log the circle coordinates
     console.log("Circle:", { x, y, radius });
@@ -46,9 +44,11 @@ document.addEventListener('click', function (event) {
 
         // Calculate the distance between the centers of the circles
         const distance = Math.hypot((x1 - x2), (y1 - y2));
-        const distance1 = Math.sqrt(Math.pow((x1 - x2), 2) + Math.pow((y1 - y2), 2));
 
-        console.log( distance1, r1+r2)
+        // console.log( distance1, r1+r2)
+        console.log("coor",x1,x2,y1,y2)
+        console.log("ppp",Math.abs(r1-r2), r1, r2, distance)
+
         // Check if the circles intersect or if one is inside the other
         if (distance <= Math.abs(r1 - r2)) {
             console.log("One circle is completely inside another.");
