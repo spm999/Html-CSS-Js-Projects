@@ -31,3 +31,7 @@ Create random size circle on click. If their are two circles, remove them. Also 
 ## 8. Fetch data from API: [https://apifetching9.netlify.app/]()
 
 Use api and fetch data from that.
+
+## 9.Create an Alarm Clock:
+
+Create an alarm clock, add multiple alarms, show added alarms and stop button while playing.
